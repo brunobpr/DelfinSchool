@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Delfin School</string>
+    <string name="school_name">Delfin English School</string>
+    <string name="school_description">Delfin aims to be the best English school in both the UK and Ireland.</string>
+    <string name="school_address">2 Parnell Square East - Dublin, Ireland</string>
+    <string name="school_number">Call (01) 872 2037</string>
+    <string name="school_hours">9:00AM - 6:00PM</string>
+    <string name="school_website">http://www.delfinschool.com/</string>
+    <string name="contact">Contact Us</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="enter_email">Enter your e-mail address</string>
+    <string name="message">Message</string>
+    <string name="enter_message">Enter your message</string>
+    <string name="send">Send</string>
 </resources>

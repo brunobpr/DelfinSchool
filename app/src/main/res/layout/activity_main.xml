@@ -8,8 +8,8 @@
     tools:context="app.getitright.com.example.android.delfinschool.MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
@@ -22,15 +22,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:text="Delfin English School"
-            android:textColor="#045692"
+            android:text="@string/school_name"
+            android:textColor="@color/text"
             android:textSize="26sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Delfin aims to be the best English school in both the UK and Ireland."
+            android:text="@string/school_description"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="2 Parnell Square East - Dublin, Ireland"
+            android:text="@string/school_address"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Call (01) 872 2037"
+            android:text="@string/school_number"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="9:00AM - 6:00PM"
+            android:text="@string/school_hours"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -62,31 +62,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:autoLink="web"
             android:clickable="true"
             android:onClick="website"
-            android:text="http://www.delfinschool.com/"
+            android:text="@string/school_website"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
         <LinearLayout
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
             android:gravity="center_horizontal">
 
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/facebook"
                 android:onClick="facebook" />
 
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/instagram"
                 android:onClick="instagram" />
 
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/youtube"
@@ -100,8 +105,8 @@
             android:layout_margin="16dp"
             android:clickable="true"
             android:onClick="contactUs"
-            android:text="Contact us"
-            android:textColor="#045692"
+            android:text="@string/contact"
+            android:textColor="@color/text"
             android:textSize="26sp" />
 
         <LinearLayout
@@ -116,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:background="#045692"
-                android:text="Full name"
+                android:text="@string/full_name"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
@@ -124,13 +129,13 @@
                 android:id="@+id/name_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter your name" />
+                android:hint="@string/enter_name" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#045692"
-                android:text="E-mail"
+                android:text="@string/e_mail"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
@@ -138,13 +143,14 @@
                 android:id="@+id/email_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter your e-mail address" />
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#045692"
-                android:text="Message"
+                android:text="@string/message"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
@@ -152,7 +158,7 @@
                 android:id="@+id/message_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter your message" />
+                android:hint="@string/enter_message" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -160,7 +166,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
                 android:onClick="sendMessage"
-                android:text="Send"
+                android:text="@string/send"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
